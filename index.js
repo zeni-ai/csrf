@@ -15,7 +15,7 @@
 var rndm = require('rndm')
 var uid = require('uid-safe')
 var compare = require('tsscmp')
-var crypto = require('crypto')
+var crypto = require('crypto-browserify')
 
 /**
  * Module variables.
