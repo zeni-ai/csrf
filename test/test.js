@@ -1,5 +1,5 @@
 var assert = require('assert')
-var crypto = require('crypto')
+var crypto = require('crypto-browserify')
 
 var Promise = global.Promise || require('bluebird')
 var Tokens = require('..')

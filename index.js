@@ -14,6 +14,7 @@
 
 var rndm = require('rndm')
 var uid = require('uid-safe')
+var nanoid = require('nanoid');
 var compare = require('tsscmp')
 var crypto = require('crypto-browserify')
 
@@ -101,7 +102,7 @@ Tokens.prototype.secret = function secret (callback) {
  */
 
 Tokens.prototype.secretSync = function secretSync () {
-  return uid.sync(this.secretLength)
+  return nanoid.nanoid(this.secretLength)
 }
 
 /**
